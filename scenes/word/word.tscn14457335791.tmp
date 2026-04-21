@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://mc1okdx6ryxl"]
+
+[ext_resource type="Script" uid="uid://btpe60xv0br5x" path="res://scenes/word/word.gd" id="1_jmlvw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jmlvw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmlvw"]
+
+[node name="word" type="Area2D" unique_id=1821154812]
+script = ExtResource("1_jmlvw")
+
+[node name="label" type="Label" parent="." unique_id=251001491]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_jmlvw")
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="." unique_id=1151701807]
+shape = SubResource("RectangleShape2D_jmlvw")
