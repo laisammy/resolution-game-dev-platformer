@@ -5,6 +5,7 @@ const SPEED = 300.0
 var JUMP_VELOCITY = -400.0
 
 @onready var timer: Timer = $timer
+@onready var sprite_2d: Sprite2D = $sprite2d
 
 func _process(delta: float) -> void:
 	timeLeft()

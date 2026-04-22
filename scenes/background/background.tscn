@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b7a351bvhqx2m"]
+
+[ext_resource type="Script" uid="uid://b0tthdadd7adc" path="res://scenes/background/background.gd" id="1_iheb5"]
+
+[node name="background" type="Control" unique_id=389355262]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iheb5")
+
+[node name="textureRect" type="TextureRect" parent="." unique_id=1972251687]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="randomDuckAPI" type="HTTPRequest" parent="." unique_id=1362929042]
+
+[connection signal="request_completed" from="randomDuckAPI" to="." method="_on_random_duck_api_request_completed"]
