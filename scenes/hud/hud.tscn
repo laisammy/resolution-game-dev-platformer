@@ -14,7 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_48c2t")
 
-[node name="label" type="Label" parent="." unique_id=215591796]
+[node name="jumpBoost" type="Label" parent="." unique_id=215591796]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -23,5 +23,18 @@ offset_left = 10.0
 offset_top = -45.0
 offset_right = 194.0
 grow_vertical = 0
-text = "jump boost:"
+text = "Jump Boost Time Left:"
+label_settings = SubResource("LabelSettings_6kolt")
+
+[node name="coinsCollected" type="Label" parent="." unique_id=389036393]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -633.0
+offset_right = 348.0
+offset_bottom = -588.0
+grow_vertical = 0
+text = "Coins Collected:"
 label_settings = SubResource("LabelSettings_6kolt")

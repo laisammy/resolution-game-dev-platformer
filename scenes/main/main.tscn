@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dw2c72nmymha4" path="res://icon.svg" id="1_hyk8p"]
 [ext_resource type="PackedScene" uid="uid://c8us7rwy663pm" path="res://scenes/player/player.tscn" id="2_l3cfh"]
+[ext_resource type="PackedScene" uid="uid://bknb8jewby8ar" path="res://scenes/coin/coin.tscn" id="2_ow5a4"]
 [ext_resource type="Script" uid="uid://bo6pfk2cnoltb" path="res://scenes/main/word_api_requester.gd" id="3_k2fmo"]
 [ext_resource type="PackedScene" uid="uid://mc1okdx6ryxl" path="res://scenes/word/word.tscn" id="4_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://cpf7lxs0fds8r" path="res://scenes/hud/hud.tscn" id="5_6q06x"]
@@ -160,5 +161,11 @@ offset_left = 2.0
 offset_top = 1.0
 offset_right = 2.0
 offset_bottom = 1.0
+
+[node name="coin" parent="." unique_id=91072234 instance=ExtResource("2_ow5a4")]
+position = Vector2(102, 102)
+
+[node name="coin2" parent="." unique_id=457355036 instance=ExtResource("2_ow5a4")]
+position = Vector2(1112, 248)
 
 [connection signal="request_completed" from="wordAPIRequester" to="wordAPIRequester" method="_on_request_completed"]
