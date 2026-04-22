@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c8us7rwy663pm"]
+
+[ext_resource type="Texture2D" uid="uid://dw2c72nmymha4" path="res://icon.svg" id="1_8afob"]
+[ext_resource type="Script" uid="uid://ch0gddb41re7" path="res://scenes/player/player.gd" id="1_dovo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
+size = Vector2(127.49999, 126.25)
+
+[node name="player" type="CharacterBody2D" unique_id=1551243255]
+script = ExtResource("1_dovo2")
+
+[node name="sprite2d" type="Sprite2D" parent="." unique_id=1010787382]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_8afob")
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="." unique_id=898435579]
+position = Vector2(0, 1.9999998)
+scale = Vector2(0.8, 0.8)
+shape = SubResource("RectangleShape2D_dovo2")
+
+[node name="timer" type="Timer" parent="." unique_id=659776887]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

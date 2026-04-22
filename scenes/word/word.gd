@@ -25,3 +25,4 @@ func set_word(w: String) :
 	word = w
 	if word_label:
 		word_label.text = word
+		
