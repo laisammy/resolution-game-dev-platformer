@@ -24,3 +24,4 @@ func displayTimeLeft(timeLeft: float) -> void:
 func collectCoin() -> void:
 	coins += 1
 	coins_collected.text = "Coins Collected: " + str(coins)
+	
